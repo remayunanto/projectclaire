@@ -39,8 +39,8 @@ const countdown = setInterval(() => {
 
         // Display two rows: one for years/months/weeks/days, and one for hours/minutes/seconds
         document.getElementById("timer").innerHTML = `
-            <div>${years}y ${months}mo ${weeks}w ${days}d</div>
-            <div>${hours}h ${minutes}m ${seconds}s</div>
+            <div>${years} years, ${months} months, ${weeks} weeks, ${days} days</div>
+            <div>${hours} hours, ${minutes} minutes, ${seconds} seconds.</div>
         `;
     } 
     // If the time remaining is less than 365 days, display in days, hours, minutes, seconds
@@ -55,7 +55,7 @@ const countdown = setInterval(() => {
     // If the countdown is finished
     else {
         clearInterval(countdown);
-        document.getElementById("timer").innerHTML = "Countdown Finished!";
+        document.getElementById("timer").innerHTML = "Project:Claire has been Completed.";
     }
 
     // Calculate the days passed since the origin date
